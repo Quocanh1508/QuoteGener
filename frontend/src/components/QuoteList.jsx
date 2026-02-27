@@ -11,9 +11,10 @@ const QuoteList = ({ refreshTrigger }) => {
   const fetchQuotes = async () => {
     setLoading(true);
     try {
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
       const url = category
-        ? `http://localhost:5000/api/quotes?category=${category}`
-        : 'http://localhost:5000/api/quotes';
+        ? `${apiUrl}/api/quotes?category=${category}`
+        : `${apiUrl}/api/quotes`;
       const res = await axios.get(url);
       setQuotes(res.data);
     } catch (error) {

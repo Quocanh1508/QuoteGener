@@ -8,7 +8,8 @@ const QuoteDisplay = () => {
     const fetchRandomQuote = async () => {
         setLoading(true);
         try {
-            const res = await axios.get('http://localhost:5000/api/quotes/random');
+            const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+            const res = await axios.get(`${apiUrl}/api/quotes/random`);
             setQuote(res.data);
         } catch (error) {
             console.error("Error fetching quote", error);
