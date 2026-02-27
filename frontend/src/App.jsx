@@ -21,11 +21,13 @@ function App() {
       <header className="py-8 border-b border-white/5 relative z-10">
         <div className="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center mb-6 md:mb-0">
-            <div className="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl mr-4 flex items-center justify-center shadow-lg shadow-indigo-500/30">
-              <span className="text-white font-bold text-xl">"</span>
-            </div>
+            <img
+              src="/logo.png"
+              alt="LibraryOfQuote Logo"
+              className="w-16 h-16 object-cover rounded-xl mr-3 shadow-lg shadow-indigo-500/20 bg-white/5 p-1"
+            />
             <h1 className="text-3xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">
-              Inspo<span className="text-indigo-400">Quotes</span>
+              LibraryOf<span className="text-indigo-400">Quote</span>
             </h1>
           </div>
 
