@@ -69,7 +69,7 @@ function App() {
       </main>
 
       <footer className="py-8 mt-auto border-t border-white/5 relative z-10 text-center text-slate-500 text-sm">
-        <p>© {new Date().getFullYear()} InspoQuotes. Powered by React, Vite, and tailwindCss.</p>
+        <p>© {new Date().getFullYear()} LibraryOfQuote. Powered by React, Vite, and tailwindCss. Made by Quoc Anh.</p>
       </footer>
     </div>
   );
