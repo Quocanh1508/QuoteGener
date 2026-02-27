@@ -76,4 +76,4 @@ Nếu bạn muốn clone dự án này về và chạy trên máy tính cá nhâ
    node server.js
    ```
 
-🎉 **Mở trình duyệt tại địa chỉ http://localhost:5173 và tận hưởng!**
+🎉 **Mở trình duyệt tại địa chỉ https://quote-gener.vercel.app/ và tận hưởng!**
