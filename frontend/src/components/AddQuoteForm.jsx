@@ -14,8 +14,7 @@ const AddQuoteForm = ({ onQuoteAdded }) => {
         setStatus({ type: '', message: '' });
 
         try {
-            const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
-            await axios.post(`${apiUrl}/api/quotes`, {
+            await axios.post('/api/quotes', {
                 text, author, category: category.toLowerCase()
             });
             setStatus({ type: 'success', message: 'Quote added successfully!' });
